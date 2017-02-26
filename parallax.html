@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Metheric Utsav</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/sass/style.sass"/>
+		<link rel="stylesheet" href="assets/css/style.css"/>
+		<link rel="icon" href="favicon.png" type="image/x-icon" />
+	</head>
+	<body>
+		<!-- Wrapper -->
+		<div id="wrapper" class="divided">
+			<div id='stars'></div>
+			<div id='stars2'></div>
+			<div id='stars3'></div>
+			
+					<section class="invert banner style5  orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="box" style="overflow:hidden;">
+						
+					<div id="l1" style="position: absolute; "><img src="images/icon.png"/></div>
+					<div id="l2" style="position: absolute;	"><img src="images/smoke.png"/></div>
+					<div id="l3" style="position: absolute;	"><img src="images/smoke2.png"/></div>
+					<div id="l4" style="position: absolute;	"><img src="images/text.png"/></div>
+					</section>
+			<!-- One -->
+			<section class="invert banner style5 orient-left content-align-center">
+				<div class="content">
+					<h1>This year, we make it bigger and better than ever!</h1>
+				</div>
+			</section>
+			<!-- Two -->
+			<div id="stars"></div>
+			<div id='stars2'></div>
+			<section class="wrapper style1 align-center invert" id="first">
+				<div class="inner">
+					<h2>Events</h2>
+					<p>List of events of <strong>Metheric Utsav 2017</strong> March 10 & 11 hosted in the campus of <strong>Methodist College of Engineering and Technology</strong>, Abids, Hyderabad, India.</p>
+					<div class="items style2 medium">
+						<section>
+							<img src="images/neon.jpg" width="100%"/>
+							<h3>Neon lit party</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+						</section>
+						<section>
+							<img src="images/zorbing.jpg" width="100%"/>
+							<h3>Body zorbing</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+						</section>
+						<section>
+							<img src="images/presentation.jpeg" width="100%"/>
+							<h3>Paper presentations</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+						</section>
+						<section>
+							<img src="images/cad.jpg" width="100%"/>
+							<h3>AutoCAD challenge</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+						</section>
+						<section>
+							<img src="images/expo.jpg" width="100%"/>
+							<h3>Project Expo</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+						</section>
+						<section>
+							<img src="images/sherl.jpg" width="90%"/>
+							<h3>Sherlocked</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+						</section>						
+					</div>
+					<ul class="actions vertical">
+						<li><a href="events.html" class="button" style="width:100%;border-radius:0;">And many more...</a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- Seven -->
+			<section class="wrapper style1 align-center invert">
+				<div class="inner medium">
+					<h2>Get in touch</h2>
+					<form method="post" action="#">
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" value="" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" value="" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+						</ul>
+					</form>
+				</div>
+			</section>
+			<!-- Footer -->
+			<footer class="wrapper style1 align-center invert">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="http://facebook.com/methericutsav" target="_blank" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="maito:hello@metheric-utsav.org" target="_blank" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<p>&copy; Metheric Utsav 2017</p>
+				</div>
+			</footer>
+		</div>
+		<!-- Scripts -->
+		<script>
+			window.onload = function () {
+
+				var parallaxBox = document.getElementById ( 'box' );
+				var c1left = document.getElementById ( 'l1' ).offsetLeft,
+					c1top = document.getElementById ( 'l1' ).offsetTop,
+					c2left = document.getElementById ( 'l2' ).offsetLeft,
+					c2top = document.getElementById ( 'l2' ).offsetTop,
+					c3left = document.getElementById ( 'l3' ).offsetLeft,
+					c3top = document.getElementById ( 'l3' ).offsetTop,
+					c4left = document.getElementById ( 'l4' ).offsetLeft,
+					c4top = document.getElementById ( 'l4' ).offsetTop;
+
+				parallaxBox.onmousemove = function ( event ) {
+					event = event || window.event;
+					var x = event.clientX - parallaxBox.offsetLeft,
+						y = event.clientY - parallaxBox.offsetTop;
+
+					mouseParallax ( 'l1', c1left, c1top, x, y, 50 );
+					mouseParallax ( 'l2', c2left, c2top, x, y, 125 );
+					mouseParallax ( 'l3', c3left, c3top, x, y, 150 );
+					mouseParallax ( 'l4', c4left, c4top, x, y, 65 );
+				}
+
+			}
+
+			function mouseParallax ( id, left, top, mouseX, mouseY, speed ) {
+				var obj = document.getElementById ( id );
+				var parentObj = obj.parentNode,
+					containerWidth = parseInt( parentObj.offsetWidth ),
+					containerHeight = parseInt( parentObj.offsetHeight );
+				obj.style.left = left - ( ( ( mouseX - ( parseInt( obj.offsetWidth ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
+				obj.style.top = top - ( ( ( mouseY - ( parseInt( obj.offsetHeight ) / 2 + top ) ) / containerHeight ) * speed ) + 'px';
+			}
+		</script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
